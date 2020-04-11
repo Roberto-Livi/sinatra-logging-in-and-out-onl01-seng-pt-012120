@@ -7,9 +7,9 @@
   </head>
   <body id="page-top">
   
-  <%  if self.is_logged_in?(session)   %>
-      <%=  username  %>
-      <%=  self.balance  %>
+  <%  if Helpers.is_logged_in?(session)   %>
+      <%=  Helpers.current_user(session).username  %>
+      <%=  Helpers.current_user(session).balance  %>
     <%else%>
       <%   %>
   
