@@ -1,4 +1,4 @@
-class Users
+class User
   
 end
 
